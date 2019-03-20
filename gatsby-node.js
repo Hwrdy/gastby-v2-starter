@@ -60,11 +60,6 @@ exports.onCreateWebpackConfig = ({
           include: /node_modules/,
           type: 'javascript/auto',
         },
-        {
-          test: /(intersection|typeform)/,
-          include: /node_modules/,
-          use: 'null-loader',
-        },
       ],
     },
   });

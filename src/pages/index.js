@@ -1,10 +1,19 @@
 import React from 'react';
+import ResetStyle from '@/styles/vendor/resetStyle';
+import MiniFormResetStyle from '@/styles/vendor/miniFormResetStyle';
+import GlobalStyle from '@/styles/globalStyle';
 
 const IndexPage = () => {
   return (
-    <div>
-      Hello
-    </div>
+    <React.Fragment>
+      <div>
+          1213123133
+      </div>
+
+      <ResetStyle />
+      <MiniFormResetStyle />
+      <GlobalStyle />
+    </React.Fragment>
   );
 };
 

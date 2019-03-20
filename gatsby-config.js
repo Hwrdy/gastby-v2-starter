@@ -1,7 +1,3 @@
-const autoprefixer = require('autoprefixer');
-const atImport = require('postcss-import');
-const cssnext = require('postcss-cssnext');
-
 module.exports = {
   siteMetadata: {
     title: 'Title',
@@ -12,19 +8,6 @@ module.exports = {
       resolve: 'gatsby-plugin-sitemap',
     },
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        postCssPlugins: [
-          atImport(),
-          cssnext({ browsers: ['>1%'] }),
-          autoprefixer({
-            browsers: ['>1%'],
-          }),
-        ],
-        precision: 8,
-      },
-    },
     {
       resolve: 'gatsby-plugin-styled-components',
     },
